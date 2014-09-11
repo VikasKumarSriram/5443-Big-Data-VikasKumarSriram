@@ -4,7 +4,9 @@ How ?
 I would like to convert the SQL file to Json file using PHP. And that can be done using the following lines of code
 
 ```$stmt = $dbh->query("SELECT * FROM " . $table);```
+
 ```$data = $stmt->fetchAll(PDO::FETCH_ASSOC);```
+
 ```echo json_encode($data);```
 
 Why ?
