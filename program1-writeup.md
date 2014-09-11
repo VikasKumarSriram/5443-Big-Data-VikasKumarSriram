@@ -16,7 +16,10 @@ Why ?
 
 --> And the reason why am choosing SQL out of the four formats is that, all four files contains the same set of GPS points and SQL has the least memory size. Although XML compresses best it has the largest size than all others. It comes to the almost same size as others does.
 
-Comparison
+Comparison:-
+
+When I tried to compress these files using the ZIP and GZIP mechanisms I got the same results as shown in the below table. But XML is the one which got compressed most and then YML. SQL and CSV are almost compressed to similar extent, where CSV is just a bit more than the SQL.
+
 
 | Format        | Original Size | Zip  | Gzip | Percentage   |
 | ------------- |:-------------:|:----:|:----:|:------------:|
