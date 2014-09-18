@@ -11,19 +11,19 @@ To startup a Namenode, Datanode, Jobtracker and a Tasktracker on your machine. R
 
 To check whether the Hadoop is running use the jps command 
 
-```root@ubuntu:/usr/local/hadoop$ jps
+```root@ubuntu:/usr/local/hadoop$ jps```
 
-```2287 TaskTracker
+```2287 TaskTracker```
 
-```2149 JobTracker
+```2149 JobTracker```
 
-```1938 DataNode
+```1938 DataNode```
 
-```2085 SecondaryNameNode
+```2085 SecondaryNameNode```
 
-```2349 Jps
+```2349 Jps```
 
-```1788 NameNode
+```1788 NameNode```
 
 You can examine the log file to check for the errors in /logs/ directory.
 
