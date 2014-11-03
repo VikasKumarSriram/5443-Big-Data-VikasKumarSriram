@@ -6,6 +6,10 @@ __Solution:__
   
   In my solution to get the number of unique "food items" in the file firstly I used 'sadd' command of redis to store the entries of the feild " _id". As set accepts only one entry of a perticular element I added them into a set. Further to display the number of food items I used 'scard' command which prints the length of set.
   
+  Output: 
+   Unique food items:
+   8194
+  
 __Problem 2)__
  
  How many unique nutrients are there?
@@ -14,13 +18,20 @@ __Solution__
   
   In my solution to get the number of unique nutrients in the file I added the entries of "_id " feild in nutrient array to a set using the redis command 'sadd'. There after to print the number of unique lines I used 'scard' command of redis which prints the length of the previous set mentioned.
   
+  Output:
+   Unique Number of Nutrients:
+   146
+   
 __Problem 3)__
   
-  What are the top 5 most commonly occuring nutrient?
+  What are the top 5 most commonly occuring nutrients?
   
 __Solution:__
 
   In my solution to print the most commonly occuring nutrients firstly I used 'zincrby' command of redis which stores the each element of list along with the some value. All the elements are stored in sorted order. In this program, I gave the value of the each elemnt as the number of occurances by using for loop. There after by using the 'zrevrange' command I stored the top 5 frequently occured elemnts into a new list called result and finally I printed them.
+  
+  Output:
+   
 
 __Problem 4)__
  
