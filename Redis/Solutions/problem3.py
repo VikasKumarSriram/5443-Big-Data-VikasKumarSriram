@@ -30,7 +30,7 @@ result=red_access.zrevrange('count',0,5,withscores=True)
 
 #Printing the Top 5 occurring nutrients
 for nut in result:
-	print nut
+	print nut[0]
 	print " occurs "
 	print red_access.zscore('count',nut[0])
 	print " times "
