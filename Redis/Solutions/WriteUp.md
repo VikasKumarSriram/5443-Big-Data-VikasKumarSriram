@@ -38,8 +38,14 @@ __Problem 4)__
   Given a specific nutrient, what percentage of food items contain this nutrient?
   
 __Solution:__
-
+ 
   In my solution to keep track of a perticular nutrient i.e., how many times it is repeated for different food items I used 'zincrby' command of redis. Then I stored the length of the food items list using 'zscore' command of redis and to know the total food items in the input I used 'score' command of redis. To print the percentage of food items with perticular nutrient say 'FIBTG' I divided the food items with this nutrient with the total number of nutrients and multiplied it by 100. And hence got my result.
+ Output:
+  '' occurs 10270.0 times 
+  VITD occurs 9524.0 times 
+  PROCNT occurs 8194.0 times
+  ENERC_KCAL occurs 8194.0 times
+  CHOCDF occurs 8194.0 times 
   
 __Problem 5)__
   This problem is more about size of the database depending on how data is stored. I want the size of the data base on disk (remember info && human readable). You will also need to make sure you run flushall before loading this structure.You can make multiple passes on the data, and I'm not looking for extremely efficient processing, I just want it loaded as prescribed. You don't have to perform tasks in the order asked either. I just want to final resulting data structures, and size of all of them on disk.
@@ -53,8 +59,8 @@ __Problem 5)__
 __Solution:__
 
   In my solution,to store 
-  >> all id's to a set I used 'sadd' command.
-  >> all id's to hash set I used 'hset' command.
-  >> all tagnames to set I used 'sadd' command.
-  >> all tagnames to hash list IO used 'hset' command.
+   all id's to a set I used 'sadd' command.
+   all id's to hash set I used 'hset' command.
+   all tagnames to set I used 'sadd' command.
+   all tagnames to hash list IO used 'hset' command.
   
