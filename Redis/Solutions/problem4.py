@@ -34,4 +34,8 @@ Food_Item_count=red_access.zscore('count',Food_Item)
 x = float(Food_Itam_count)*100/float(Total_lines)
 print ("Total number of occurrences of ",Food_Item," is ",Food_Item_count)
 print ("Total number of lines is",Total_lines)
+<<<<<<< HEAD
 print (Food_Item," occurs in ",x,"% of food items")
+=======
+print (Food_Item," occurs in ",x,"% of food items")
+>>>>>>> 33aa5602ad2bcd1632a315ba855e5b0a43ebe85b
