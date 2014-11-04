@@ -14,14 +14,14 @@ def is_json(myjson):
 Food_Item = 'FIBTG'
 
 #opening the file to be read	
-file=open('nutrition.json','r')
+file=open('../nutrition.json','r')
 
 #linking up with redis
 red_access=redis.StrictRedis(host='localhost',port=6379,db=0)
 red_access.flushdb()
 
 #checking each line in the input file whether it is valid json or not
-for line in f:
+for line in file:
 	line = json.loads(filter(lambda x: x in string.printable, line))
 	
 	#if this is valid keep a record of the count of food items
@@ -34,4 +34,4 @@ Food_Item_count=red_access.zscore('count',Food_Item)
 x = float(Food_Itam_count)*100/float(Total_lines)
 print ("Total number of occurrences of ",Food_Item," is ",Food_Item_count)
 print ("Total number of lines is",Total_lines)
-print (Food_Item," occurs in ",x"% of food items")
+print (Food_Item," occurs in ",x,"% of food items")
