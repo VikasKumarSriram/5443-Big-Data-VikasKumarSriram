@@ -1,7 +1,5 @@
 ## REFERENCES
 
-
-
 [1]	Barnett. M., Chandramouli. B., DeLine. R., Drucker. S., Fisher. D., Goldstein. J., Morrison. P. and Platt. J.  Stat! – An Interactive Analytics Environment for Big Data. Proceedings of the 2013 ACM SIGMOD International Conference on Management of Data. (SIGMOD)(June 2013, New York, USA), 1013-1016.
 
 [2]	Cuzzocrea. A., Song. Y. I. and Davis.C.K. Analytics over Large-Scale Multidimensional Data: The Big Data Revolution! Proceedings of the ACM 14th International Workshop on Data Warehousing and OLAP (DOLAP) (October 2011, Scotland, United Kingdom), 101-104.
